@@ -158,12 +158,16 @@ function bookShelfTable(){
     const percent = document.createElement("th");
     const percentText = document.createTextNode("Percentage Compete");
     percent.appendChild(percentText);
+    const timer = document.createElement("th");
+    const timerText = document.createTextNode("Time to Finish Book");
+    timer.appendChild(timerText);
 
     header.appendChild(title);
     header.appendChild(pRead);
     header.appendChild(pCount);
     header.appendChild(pLeft);
     header.appendChild(percent);
+    header.appendChild(timer);
     tblHead.appendChild(header);
     tbl.appendChild(tblHead);
       
@@ -192,6 +196,10 @@ function bookShelfTable(){
         const cell5Text = document.createTextNode(Math.round((book.PagesRead / book.PageCount) * 100));
         cell5.appendChild(cell5Text);
         row.appendChild(cell5);
+        const cell6 = document.createElement("td");
+        const cell6Text = document.createTextNode(Math.round((book.PageCount - book.PagesRead) / readingSpeed) + " minutes");
+        cell6.appendChild(cell6Text);
+        row.appendChild(cell6);
       
         tblBody.appendChild(row);
     }
