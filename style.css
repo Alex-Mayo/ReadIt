@@ -1,0 +1,109 @@
+*{
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.nav{
+    background-color: #333;
+    text-align: center;
+    overflow: hidden;
+    padding: 30px;
+}
+
+.nav a{
+    float: center;
+    color: #ddd;
+    text-align: center;
+    padding: 30px 10px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.nav a:hover{
+    background-color:#ddd;
+    color:black;
+    transition: 0.7s;
+}
+
+.nav a:active{
+    background-color: #3c4bef;
+    color:white;
+    transition: 0s;
+}
+
+h1{
+    background-color: #333;
+    color: #ddd;
+    text-align: center;
+    padding: 30px;
+    margin: 0px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+table, th, td{
+    border: 5px solid;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 5px 0px;
+}
+
+th, td{
+    text-align: center;
+}
+
+th{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+td{
+    font-size: 20px;
+}
+
+h2{
+    font-size: 25px;
+    margin: 15px;
+}
+
+h3{
+    font-size: 20px;
+    margin: 5px;
+    text-align: center;
+}
+
+button{
+    border: none;
+    background-color: #3c4bef;
+    color: white;
+    padding: 16px 32px;
+    font-size: 20px;
+    margin: 20px;
+}
+
+button:hover{
+    background-color: #252d87;
+    transition: 0.7s;
+}
+
+button:active{
+    background-color: #11153b;
+    transition: 0.7s;
+}
+
+select{
+    background-color: #333;
+    color: white;
+    font-size: 20px;
+    margin: 5px;
+}
+
+input{
+    background-color: #333;
+    color: white;
+    font-size: 20px;
+    margin: 5px;
+}

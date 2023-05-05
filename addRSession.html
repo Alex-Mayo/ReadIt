@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+<body onload = "drop()">
+    <h1>ReadIt</h1>
+    <div class = "nav">
+        <a href = "main.html">My Profile</a>
+        <a href = "bookshelf.html">Bookshelf</a>
+        <a href = "addBook.html">Add a Book</a>
+        <a href = "removeBook.html">Remove a Book</a>
+        <a href = "addRSession.html">Add a Reading Session</a>
+    </div>
+
+    <div class = "form">
+        <h2>Add a Reading Session</h2>
+        <h3>Book Title</h3>
+        <select id = "selection">
+            <option value = "none" selected disabled>Select a Book</option>
+        </select>
+        <br><br>
+        <h3>Minutes Spent Reading</h3>
+        <input type = "number" id = "newMinutes" step = 1 min = 1 default = 1> <br><br>
+        <h3>Pages Read</h3>
+        <input type = "number" id = "newPRead" step = 1 min = 1 default = 1><br><br>
+        <button type = "button" onclick = "addReadingButton()">Add Reading Session</button>
+    </div>
+    <p id = "test"></p>
+
+</body>
+    <script src = "background.js">
+    </script>
+
+</html>

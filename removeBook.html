@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+<body onload = "drop()">
+    <h1>ReadIt</h1>
+    <div class = "nav">
+        <a href = "main.html">My Profile</a>
+        <a href = "bookshelf.html">Bookshelf</a>
+        <a href = "addBook.html">Add a Book</a>
+        <a href = "removeBook.html">Remove a Book</a>
+        <a href = "addRSession.html">Add a Reading Session</a>
+    </div>
+
+    <div class = "form">
+        <h2>Remove a Book</h2><br>
+        <h3>Select book to remove from the Bookshelf</h3>
+        <h3>NOTE: This will not update or change your Reading Speed</h3>
+        <select id = "selection">
+            <option value = "none" selected disabled>Select a Book</option>
+        </select>
+        <br>
+        <button type = "button" onclick = "removeBookButton()">Remove from Book Shelf</button>
+
+    </div>
+
+</body>
+    <script src = "background.js">
+    </script>
+
+</html>

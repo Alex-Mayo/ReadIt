@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+<body onload = "read()">
+    <h1>ReadIt</h1>
+    <div class = "nav">
+        <a href = "main.html">My Profile</a>
+        <a href = "bookshelf.html">Bookshelf</a>
+        <a href = "addBook.html">Add a Book</a>
+        <a href = "removeBook.html">Remove a Book</a>
+        <a href = "addRSession.html">Add a Reading Session</a>
+    </div>
+
+    <div class = "form">
+        <h2>Add a Book</h2><br>
+        <h3>Book Title</h3>
+        <input type = "text" id = "bookTitle"> <br><br>
+        <h3>Page Count</h3>
+        <input type = "number" id = "newPages" step = 1 min = 1 default = 1> <br><br>
+        <button type = "button" onclick = "addBookButton()">Add to Book Shelf</button>
+    </div>
+
+</body>
+    <script src = "background.js">
+    </script>
+
+</html>
